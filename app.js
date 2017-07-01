@@ -5,6 +5,11 @@ var app = new Vue({
     data: {
         message: 'Hello, World!',
         tooltipMessage: 'This is tooltip message',
-        seen: true
+        seen: true,
+        list: [
+            {content: 'item 1'},
+            {content: 'item 2'},
+            {content: 'item 3'},
+        ]
     }
 });

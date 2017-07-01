@@ -11,5 +11,10 @@ var app = new Vue({
             {content: 'item 2'},
             {content: 'item 3'},
         ]
+    },
+    methods: {
+        reverseMessage: function () {
+            this.message = this.message.split('').reverse().join('');
+        }
     }
 });

@@ -17,6 +17,9 @@
         <ul v-for="item in list">
             <li>{{ item.content }}</li> <!-- app.list.push({content: 'item 4'}); // in console -->
         </ul>
+        <br>
+        <p>{{ userMessage }}</p>
+        <input v-model="userMessage">
     </div>
     <!-- /app -->
     <!-- scripts -->

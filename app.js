@@ -10,7 +10,8 @@ var app = new Vue({
             {content: 'item 1'},
             {content: 'item 2'},
             {content: 'item 3'},
-        ]
+        ],
+        userMessage: 'Type some message to input...'
     },
     methods: {
         reverseMessage: function () {

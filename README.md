@@ -1,2 +1,3 @@
-# vue.js
-Vue.js lessons.
+Vue.js
+======
+Vue.js lessons. Official [guide](https://ru.vuejs.org/v2/guide/).

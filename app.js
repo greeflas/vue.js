@@ -4,6 +4,7 @@ var app = new Vue({
     el: '#app',
     data: {
         message: 'Hello, World!',
-        tooltipMessage: 'This is tooltip message'
+        tooltipMessage: 'This is tooltip message',
+        seen: true
     }
 });

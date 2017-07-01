@@ -10,6 +10,8 @@
         {{ message }}
         <br>
         <span v-bind:title="tooltipMessage">Show tooltip message</span>
+        <br>
+        <span v-if="seen">I'm visible</span> <!-- app.seen = false; // in console -->
     </div>
     <!-- /app -->
     <!-- scripts -->

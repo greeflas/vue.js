@@ -8,6 +8,7 @@
     <div id="app">
         <span v-once>{{ msg }}</span>
         <div v-html="rawHtmlContent"></div>
+        <button v-bind:id="dynamicId" v-bind:disabled="isBtnActive">Button</button>
     </div>
     <!-- scripts -->
     <script src="https://unpkg.com/vue"></script>

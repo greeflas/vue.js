@@ -11,6 +11,7 @@
             <input v-model="question">
         </p>
         <p>{{ answer }}</p>
+        <img v-bind:src="imageSrc" v-if="imageSrc" alt="" width="400">
     </div>
     <!-- scripts -->
     <script src="https://unpkg.com/vue"></script>

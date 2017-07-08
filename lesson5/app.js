@@ -2,7 +2,8 @@ var vm = new Vue({
     el: '#question-app',
     data: {
         question: '',
-        answer: 'Ask a question :)'
+        answer: 'Ask a question :)',
+        imageSrc: ''
     },
     watch: {
         question: function (userQuestion) {
@@ -22,7 +23,8 @@ var vm = new Vue({
                 var vm = this;
                 axios.get('https://yesno.wtf/api')
                     .then(function (response) {
-                        vm.answer = _.capitalize(response.data.answer);
+                        vm.answer = '';
+                        vm.imageSrc = response.data.image;
                     })
                     .catch(function (error) {
                         vm.answer = 'Error! Cannot connect to API. Details (' + error + ')';

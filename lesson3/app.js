@@ -8,10 +8,17 @@ var vm = new Vue({
         rawHtmlContent: '<h1>This is raw HTML</h1>',
 
         dynamicId: 'btn-js',
-        isBtnActive: true
+        isBtnActive: true,
+
+        published: true
     },
     created: function () {
         // `this` is vm object
         console.log('Value of test field: ' + this.test);
+    },
+    filters: {
+        isset: function (value) {
+            return value ? 'yes' : 'no';
+        }
     }
 });

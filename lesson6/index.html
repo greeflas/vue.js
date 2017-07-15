@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js</title>
+    <style>
+        .cube {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .active.red {
+            background-color: red;
+        }
+
+        .active.green {
+            background-color: green;
+        }
+
+        .active.yellow {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div v-bind:class="{ active: isActive }" class="cube red"></div>
+        <div v-bind:class="classObject" class="cube green"></div>
+        <div v-bind:class="[activeClass]" class="cube yellow"></div>
+    </div>
+    <!-- scripts -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app.js"></script>
+    <!-- /scripts -->
+</body>
+</html>

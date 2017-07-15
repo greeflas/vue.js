@@ -1,3 +1,7 @@
+Vue.component('my-component', {
+    template: '<p class="text-line"></p>'
+});
+
 var vm = new Vue({
     el: '#app',
     data: {

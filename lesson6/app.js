@@ -12,6 +12,12 @@ var vm = new Vue({
             // has-error: function () {}
         },
 
-        activeClass: 'active'
+        activeClass: 'active',
+
+        styleObject: {
+            fontSize: '16px',
+            color: 'black',
+            fontWeight: 'bold'
+        }
     }
 });

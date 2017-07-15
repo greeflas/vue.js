@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js</title>
+</head>
+<body>
+    <div id="app">
+        <h1 v-if="isOk">Success!</h1>
+        <h1 v-else>Error!</h1>
+
+        <template v-if="showPopup">
+            <h2>Title</h2>
+            <p>Some content...</p>
+            <button v-on:click="closePopup">Close</button>
+        </template>
+
+        <div v-if="type === 'A'">A</div>
+        <div v-else-if="type === 'B'">B</div>
+        <div v-else-if="type === 'C'">C</div>
+        <div v-else>No A/B/C</div>
+    </div>
+    <!-- scripts -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app.js"></script>
+    <!-- /scripts -->
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="item in list"> <!-- [item in items] or [item of items] -->
+                {{ item.label }}
+            </li>
+        </ul>
+        <br>
+        <ul>
+            <li v-for="(item, index) in list">
+                {{ index + 1 }}. {{ item.label }}
+            </li>
+        </ul>
+        <br>
+        <ul>
+            <template v-for="item in list">
+                <li>{{ item.label }}</li>
+                <hr>
+            </template>
+        </ul>
+        <br>
+        <ul>
+            <li v-for="(value, key, index) in user">
+                {{ index + 1 }}. {{ key }}: {{ value }}
+            </li>
+        </ul>
+        <br>
+        <div>
+            <span v-for="num in 10">{{ num }}</span>
+        </div>
+    </div>
+    <!-- scripts -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app.js"></script>
+    <!-- /scripts -->
+</body>
+</html>

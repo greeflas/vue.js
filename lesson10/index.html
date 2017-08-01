@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="message" placeholder="Start type...">
+        <p>Message: {{ message }}</p>
+        <br>
+        <p style="white-space: pre-line">{{ text }}</p>
+        <textarea v-model="text"></textarea>
+        <br><br>
+        <input type="checkbox" id="checkbox" v-model="checked">
+        <label for="checkbox">{{ checked }}</label>
+        <br><br>
+        <input type="checkbox" id="jack" value="Jack" v-model="names">
+        <label for="jack">Jack</label>
+        <input type="checkbox" id="john" value="John" v-model="names">
+        <label for="john">John</label>
+        <input type="checkbox" id="mike" value="Mike" v-model="names">
+        <label for="mike">Mike</label>
+        <p>Checked names: {{ names }}</p>
+        <br>
+        <input type="radio" id="one" value="one" v-model="picked">
+        <label for="one">One</label>
+        <input type="radio" id="two" value="two" v-model="picked">
+        <label for="two">Two</label>
+        <p>Picked: {{ picked }}</p>
+        <br>
+        <select v-model="selected">
+            <option disabled value="">-- select --</option>
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+        </select>
+        <p>Selected: {{ selected }}</p>
+    </div>
+    <!-- scripts -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app.js"></script>
+    <!-- /scripts -->
+</body>
+</html>

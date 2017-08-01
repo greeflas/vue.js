@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js</title>
+</head>
+<body>
+    <div id="app">
+        Clicks: {{ counter }}
+        <button v-on:click="counter += 1">+1</button>
+        <br>
+        <button v-on:keyup.enter="showAlert">SignIn</button>
+        <!--
+        Button aliases:
+        .enter
+        .tab
+        .delete
+        .esc
+        .space
+        .up
+        .down
+        .left
+        .right
+
+        Mouse button aliases:
+        .left
+        .right
+        .middle
+
+        Define aliases:
+        Vue.config.keyCodes.f1 = 112
+        -->
+    </div>
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app.js"></script>
+    <!-- /scripts -->
+</body>
+</html>

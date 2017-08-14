@@ -43,11 +43,32 @@ Vue.component('validation-component', {
     }
 });
 
+Vue.component('counter', {
+    template: '<button v-on:click="incrementCounter">{{ counter }}</button>',
+    data: function () {
+        return { counter: 0 }
+    },
+    methods: {
+        incrementCounter: function () {
+            this.counter += 1;
+            this.$emit('increment');
+        }
+    }
+});
+
 var vm = new Vue({
     el: '#app',
+    data: {
+       total: 0
+    },
     components: {
         'local-component': {
             template: '<h3>This is local Vue component</h3>'
+        }
+    },
+    methods: {
+        incrementTotal: function () {
+            this.total += 1;
         }
     }
 });

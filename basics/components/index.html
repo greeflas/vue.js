@@ -14,6 +14,12 @@
         <div>
             <render-title content="This is title!"></render-title>
         </div>
+        <br>
+        <div>
+            <p>{{ total }}</p>
+            <counter v-on:increment="incrementTotal"></counter>
+            <counter v-on:increment="incrementTotal"></counter>
+        </div>
     </div>
     <!-- scripts -->
     <script src="https://unpkg.com/vue"></script>
